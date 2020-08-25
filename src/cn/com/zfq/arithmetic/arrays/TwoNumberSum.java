@@ -1,4 +1,4 @@
-package cn.com.zfq.arrays;
+package cn.com.zfq.arithmetic.arrays;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -25,6 +25,9 @@ import java.util.Map;
 public class TwoNumberSum {
 
     public static void main(String[] args) {
+
+        StringBuffer sb = new StringBuffer("ahhh");
+        System.out.println(sb);
         int[] arr = {0, 4, 3, 0};
         int target = 0;
         System.out.println(Arrays.toString(twoSumAndTwoFor(arr, target)));
