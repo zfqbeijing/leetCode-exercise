@@ -1,8 +1,6 @@
 package cn.com.zfq.arithmetic.arrays;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /***
  *
@@ -25,7 +23,6 @@ import java.util.Map;
 public class TwoNumberSum {
 
     public static void main(String[] args) {
-
         StringBuffer sb = new StringBuffer("ahhh");
         System.out.println(sb);
         int[] arr = {0, 4, 3, 0};
