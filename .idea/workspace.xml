@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b8d1dea-90b4-4249-9107-58aa09475e51" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/com/zfq/arithmetic/arrays/MergeTwoArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/com/zfq/arithmetic/arrays/SearchTwoArrayMedian.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/com/zfq/arithmetic/strings/LongestManachers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/com/zfq/sql/从不订购的客户.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/com/zfq/sql/查找重复的电子邮箱.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/com/zfq/sql/超过经理收入的员工.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/com/zfq/sql/连续出现的数字.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/com/zfq/sql/部门工资最高的员工.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/com/zfq/arithmetic/strings/IntegerInversion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/com/zfq/arithmetic/strings/ZTransformation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/com/zfq/sql/上升的温度.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/com/zfq/sql/游戏玩法分析.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/com/zfq/sql/行程和用户.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,9 +68,9 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
-  <component name="RunManager" selected="Application.LongestManachers">
-    <configuration name="LengthSubstringNotRepetition" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.com.zfq.arithmetic.strings.LengthSubstringNotRepetition" />
+  <component name="RunManager" selected="Application.IntegerInversion">
+    <configuration name="IntegerInversion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.com.zfq.arithmetic.strings.IntegerInversion" />
       <module name="leetCode-exercise" />
       <extension name="coverage">
         <pattern>
@@ -113,19 +108,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchTwoArrayMedian" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.com.zfq.arithmetic.arrays.SearchTwoArrayMedian" />
-      <module name="leetCode-exercise" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.com.zfq.arithmetic.arrays.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.com.zfq.arithmetic.Test" />
       <module name="leetCode-exercise" />
@@ -139,26 +121,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration name="ZTransformation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.com.zfq.arithmetic.strings.ZTransformation" />
+      <module name="leetCode-exercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.com.zfq.arithmetic.strings.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.IntegerInversion" />
+        <item itemvalue="Application.ZTransformation" />
         <item itemvalue="Application.LongestManachers" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.MergeTwoArray" />
-        <item itemvalue="Application.SearchTwoArrayMedian" />
-        <item itemvalue="Application.LengthSubstringNotRepetition" />
       </list>
     </recent_temporary>
   </component>
@@ -195,7 +188,8 @@
       <workItem from="1599216199517" duration="4222000" />
       <workItem from="1599462953422" duration="10732000" />
       <workItem from="1599639090433" duration="1530000" />
-      <workItem from="1599888917593" duration="16100000" />
+      <workItem from="1599888917593" duration="16204000" />
+      <workItem from="1599977990285" duration="16972000" />
     </task>
     <task id="LOCAL-00001" summary="创建项目">
       <created>1598343285810</created>
@@ -253,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599219883310</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="算法和sql">
+      <created>1599909652718</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1599909652718</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,61 +265,62 @@
     <MESSAGE value="leetCode 1.两数之和" />
     <MESSAGE value="leetCode SQL:178. 分数排名 算法：2. 两数相加" />
     <MESSAGE value="leetCode 算法：&#9;3.无重复字符的最长子串" />
-    <option name="LAST_COMMIT_MESSAGE" value="leetCode 算法：&#9;3.无重复字符的最长子串" />
+    <MESSAGE value="算法和sql" />
+    <option name="LAST_COMMIT_MESSAGE" value="算法和sql" />
   </component>
   <component name="WindowStateProjectService">
     <state x="455" y="196" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599905112140">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="455" y="196" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1599905112140" />
-    <state x="372" y="0" key="CommitChangelistDialog2" timestamp="1599219879907">
+    <state x="372" y="0" key="CommitChangelistDialog2" timestamp="1599909650256">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="372" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1599219879907" />
+    <state x="372" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1599909650256" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1599104800287">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1599104800287" />
-    <state width="1483" height="245" key="GridCell.Tab.0.bottom" timestamp="1599896113034">
+    <state width="1483" height="192" key="GridCell.Tab.0.bottom" timestamp="1600001018531">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="245" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599896113034" />
-    <state width="1483" height="245" key="GridCell.Tab.0.center" timestamp="1599896113034">
+    <state width="1483" height="192" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600001018531" />
+    <state width="1483" height="192" key="GridCell.Tab.0.center" timestamp="1600001018531">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="245" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599896113034" />
-    <state width="1483" height="245" key="GridCell.Tab.0.left" timestamp="1599896113034">
+    <state width="1483" height="192" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600001018531" />
+    <state width="1483" height="192" key="GridCell.Tab.0.left" timestamp="1600001018531">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="245" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599896113034" />
-    <state width="1483" height="245" key="GridCell.Tab.0.right" timestamp="1599896113034">
+    <state width="1483" height="192" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600001018531" />
+    <state width="1483" height="192" key="GridCell.Tab.0.right" timestamp="1600001018531">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="245" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599896113034" />
-    <state width="1483" height="245" key="GridCell.Tab.1.bottom" timestamp="1599896112789">
+    <state width="1483" height="192" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600001018531" />
+    <state width="1483" height="192" key="GridCell.Tab.1.bottom" timestamp="1600001018318">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="245" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599896112789" />
-    <state width="1483" height="245" key="GridCell.Tab.1.center" timestamp="1599896112789">
+    <state width="1483" height="192" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600001018318" />
+    <state width="1483" height="192" key="GridCell.Tab.1.center" timestamp="1600001018318">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="245" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1599896112789" />
-    <state width="1483" height="245" key="GridCell.Tab.1.left" timestamp="1599896112789">
+    <state width="1483" height="192" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1600001018318" />
+    <state width="1483" height="192" key="GridCell.Tab.1.left" timestamp="1600001018318">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="245" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1599896112789" />
-    <state width="1483" height="245" key="GridCell.Tab.1.right" timestamp="1599896112789">
+    <state width="1483" height="192" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1600001018318" />
+    <state width="1483" height="192" key="GridCell.Tab.1.right" timestamp="1600001018318">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1483" height="245" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1599896112789" />
+    <state width="1483" height="192" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1600001018318" />
     <state x="160" y="0" key="SettingsEditor" timestamp="1599220447366">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="160" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1599220447366" />
-    <state x="261" y="81" key="Vcs.Push.Dialog.v2" timestamp="1599219900836">
+    <state x="261" y="81" key="Vcs.Push.Dialog.v2" timestamp="1599909681170">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="261" y="81" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1599219900836" />
+    <state x="261" y="81" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1599909681170" />
     <state x="400" y="284" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1599140668611">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
