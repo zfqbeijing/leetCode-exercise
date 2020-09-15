@@ -1,0 +1,77 @@
+表: Candidate
+
++-----+---------+
+| id  | Name    |
++-----+---------+
+| 1   | A       |
+| 2   | B       |
+| 3   | C       |
+| 4   | D       |
+| 5   | E       |
++-----+---------+
+表: Vote
+
++-----+--------------+
+| id  | CandidateId  |
++-----+--------------+
+| 1   |     2        |
+| 2   |     4        |
+| 3   |     3        |
+| 4   |     2        |
+| 5   |     5        |
++-----+--------------+
+id 是自动递增的主键，
+CandidateId 是 Candidate 表中的 id.
+请编写 sql 语句来找到当选者的名字，上面的例子将返回当选者 B.
+
++------+
+| Name |
++------+
+| B    |
++------+
+注意:
+
+你可以假设没有平局，换言之，最多只有一位当选者。
+
+执行用时：322 ms, 在所有 MySQL 提交中击败了76.49%的用户
+内存消耗：0B, 在所有 MySQL 提交中击败了100.00%的用户
+SELECT
+	c.`name`
+FROM
+	Candidate c
+JOIN
+	(SELECT
+		CandidateId
+	FROM
+		Vote
+	GROUP BY
+		CandidateId
+	ORDER BY
+		COUNT(CandidateId)
+	DESC LIMIT 1
+	) v
+ON
+	c.id = v.CandidateId;
+
+执行用时：356 ms, 在所有 MySQL 提交中击败了45.00%的用户
+内存消耗：0B, 在所有 MySQL 提交中击败了100.00%的用户
+SELECT
+	`name`
+FROM
+	Candidate
+WHERE
+	id =
+	(SELECT
+		CandidateId
+	FROM
+		Vote
+	GROUP BY
+		CandidateId
+	ORDER BY
+		COUNT(CandidateId)
+	DESC LIMIT 1
+	);
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/winning-candidate
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
