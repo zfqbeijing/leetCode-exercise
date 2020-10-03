@@ -1,0 +1,40 @@
+给定表 customer ，里面保存了所有客户信息和他们的推荐人。
+
++------+------+-----------+
+| id   | name | referee_id|
++------+------+-----------+
+|    1 | Will |      NULL |
+|    2 | Jane |      NULL |
+|    3 | Alex |         2 |
+|    4 | Bill |      NULL |
+|    5 | Zack |         1 |
+|    6 | Mark |         2 |
++------+------+-----------+
+写一个查询语句，返回一个编号列表，列表中编号的推荐人的编号都 不是 2。
+
+对于上面的示例数据，结果为：
+
++------+
+| name |
++------+
+| Will |
+| Jane |
+| Bill |
+| Zack |
++------+
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/find-customer-referee
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+
+执行用时：350 ms, 在所有 MySQL 提交中击败了83.67%的用户
+内存消耗：0 B, 在所有 MySQL 提交中击败了100.00%的用户
+SELECT
+	`name`
+FROM
+	customer
+WHERE
+	referee_id != 2
+OR
+	referee_id
+IS NULL;

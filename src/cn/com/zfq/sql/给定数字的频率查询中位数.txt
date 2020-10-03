@@ -19,3 +19,47 @@ Numbers 表保存数字的值及其频率。
 来源：力扣（LeetCode）
 链接：https://leetcode-cn.com/problems/find-median-given-frequency-of-numbers
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+
+执行用时：144 ms, 在所有 MySQL 提交中击败了97.78%的用户
+内存消耗：0 B, 在所有 MySQL 提交中击败了100.00%的用户
+
+SELECT
+	ROUND(AVG(n1.number),4) median
+FROM
+	(SELECT
+		number,
+		SUM(frequency)over(ORDER BY number) a_num,
+		SUM(frequency)over(ORDER BY number DESC) d_num
+	FROM
+		numbers) n1
+JOIN
+	(SELECT
+		SUM(frequency) s
+	FROM
+		numbers) n2
+WHERE
+	n1.a_num >= n2.s/2
+AND
+	n1.d_num >= n2.s/2
+
+
+
+说明：
+    1、1、1、1、2、3、3、3、4
+正   倒
+1   4
+1   4
+1   3
+1   3
+2   3
+3   2
+3   1
+3   1
+4   1
+4   1
+
+
+
+
+
+

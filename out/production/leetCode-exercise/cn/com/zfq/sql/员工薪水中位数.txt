@@ -36,3 +36,38 @@ Employee 表包含所有员工。Employee 表有三列：员工Id，公司名和
 来源：力扣（LeetCode）
 链接：https://leetcode-cn.com/problems/median-employee-salary
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+
+
+执行用时：234 ms, 在所有 MySQL 提交中击败了88.75%的用户
+内存消耗：0 B, 在所有 MySQL 提交中击败了100.00%的用户
+
+SELECT
+	e.id,
+	e.company,
+	e.salary
+FROM
+	(SELECT
+		id,
+		company,
+		salary,
+		-- ROW_NUMBER()OVER(PARTITION BY ... ORDER BY ...) 分组聚合函数
+		ROW_NUMBER()OVER(
+			PARTITION BY
+				company
+			ORDER BY
+				salary
+		) ranking,
+        -- 求和分组
+		COUNT(id) OVER(
+			PARTITION BY
+				company
+		) cu
+	FROM
+		Employee) e
+WHERE
+	e.ranking>=e.cu/2
+AND
+	e.ranking<=e.cu/2+1
+
+聚合函数 OVER(PARTITION BY ) 聚合函数分组
+
