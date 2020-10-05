@@ -19,6 +19,8 @@
 | 1               |
 +-----------------+
 
+执行用时：374 ms, 在所有 MySQL 提交中击败了58.24%的用户
+内存消耗：0B, 在所有 MySQL 提交中击败了100.00%的用户
 SELECT DISTINCT
 	l1.num ConsecutiveNums
 FROM
@@ -33,9 +35,6 @@ AND
 	l1.num = l2.num
 AND
 	l2.num = l3.num;
-
-执行用时：374 ms, 在所有 MySQL 提交中击败了58.24%的用户
-内存消耗：0B, 在所有 MySQL 提交中击败了100.00%的用户
 
 是否存在更好的方法，
 
