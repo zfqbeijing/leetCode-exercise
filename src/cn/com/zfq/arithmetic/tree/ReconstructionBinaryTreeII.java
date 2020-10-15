@@ -1,7 +1,6 @@
-package cn.com.zfq.arithmetic.prove_safety;
+package cn.com.zfq.arithmetic.tree;
 
 import cn.com.zfq.arithmetic.utils.TreeNode;
-import cn.com.zfq.arithmetic.utils.TreeOperation;
 
 import java.util.Stack;
 
@@ -33,18 +32,10 @@ import java.util.Stack;
  * @Version: v1.0
  * @Modified By: 
  */
-public class ReconstructionBinaryTree {
+public class ReconstructionBinaryTreeII {
 
     public static void main(String[] args) {
-        int[] preorder = {3, 9, 8, 5, 4, 10, 20, 15, 7};
-        int[] inorder = {4, 5, 8, 10, 9, 3, 15, 20, 7};
-        int[] preorder2 = {4, 5, 17, 15, 8, 18, 19, 20, 21};
-        int[] inorder2 = {17, 5, 15, 4, 18, 19, 8, 21, 20};
-        ReconstructionBinaryTree tree = new ReconstructionBinaryTree();
-        TreeNode node = tree.buildTree(preorder, inorder);
-        TreeOperation.show(node);
-        node = tree.buildTree(preorder2, inorder2);
-        TreeOperation.show(node);
+
     }
 
     /**
