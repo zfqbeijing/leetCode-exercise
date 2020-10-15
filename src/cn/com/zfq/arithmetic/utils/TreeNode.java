@@ -2,7 +2,7 @@ package cn.com.zfq.arithmetic.utils;
 
 /***
  * @ClassName: TreeNode
- * @Description: TODO
+ * @Description: 二叉树模板
  * @Author: 张枫琴
  * @Date: 2020/10/15 18:24
  * @Version: v1.0

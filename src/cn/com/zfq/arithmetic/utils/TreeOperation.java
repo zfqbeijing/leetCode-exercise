@@ -2,8 +2,7 @@ package cn.com.zfq.arithmetic.utils;
 
 /***
  * @ClassName: TreeOperation
- * @Description:
- * 在控制打印出二叉树的结构，用来对比判断是否是正确的
+ * @Description: 在控制打印出二叉树的结构，用来对比判断是否是正确的
  * @Author: 张枫琴
  * @Date: 2020/10/15 18:23
  * @Version: v1.0
