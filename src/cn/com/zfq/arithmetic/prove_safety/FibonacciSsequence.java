@@ -4,6 +4,7 @@ package cn.com.zfq.arithmetic.prove_safety;
  * @ClassName: FibonacciSsequence
  * @Description:
  * 剑指 Offer 10- I. 斐波那契数列
+ * 509. 斐波那契数 差别就是不需要取模
  * 写一个函数，输入 n ，求斐波那契（Fibonacci）数列的第 n 项。斐波那契数列的定义如下：
  *
  * F(0) = 0, F(1)= 1
@@ -86,48 +87,5 @@ public class FibonacciSsequence {
             return n;
         }
         return fib(n - 2) % 1000000007 + fib(n - 1) % 1000000007;
-    }
-
-    public int fib3(int n) {
-        if (n < 1) {
-            return 0;
-        } else if (n == 1 || n == 2) {
-            return 1;
-        }
-        int[][] base = {{1, 1}, {1, 0}};
-        int[][] res = matrixPower(base, n - 2);
-        return res[0][0] + res[1][0];
-    }
-
-    private int[][] matrixPower(int[][] m, int p) {
-        int[][] res = new int[m.length][m[0].length];
-        for (int i = 0; i < res.length; i++) {
-            res[i][i] = 1;
-        }
-        int[][] temp = m;
-        for (; p != 0; p >>= 1) {
-            if ((p & 1) != 0) {
-                res = mullMatrix(res, temp);
-            }
-            temp = mullMatrix(temp, temp);
-        }
-        return res;
-    }
-
-    private int[][] mullMatrix(int[][] m1, int[][] m2) {
-        int[][] res = new int[m1.length][m2[0].length];
-        for (int i = 0; i < m1.length; i++) {
-            for (int j = 0; j < m2[0].length; j++) {
-                for (int k = 0; k < m2.length; k++) {
-                    res[i][j] += m1[i][k] * m2[k][j]%1000000007;
-                }
-            }
-        }
-        return res;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(new FibonacciSsequence().fib(5));
-        System.out.println(new FibonacciSsequence().fib2(5));
     }
 }

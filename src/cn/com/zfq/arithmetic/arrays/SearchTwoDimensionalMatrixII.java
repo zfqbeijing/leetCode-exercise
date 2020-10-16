@@ -1,4 +1,4 @@
-package cn.com.zfq.arithmetic.prove_safety;
+package cn.com.zfq.arithmetic.arrays;
 
 /***
  * @ClassName: FindTwoArray
@@ -27,9 +27,9 @@ package cn.com.zfq.arithmetic.prove_safety;
  * @Author: 张枫琴
  * @Date: 2020/10/12 14:56
  * @Version: v1.0
- * @Modified By: 
+ * @Modified By:
  */
-public class FindTwoArray {
+public class SearchTwoDimensionalMatrixII {
 
     /**
      * 暴力
@@ -43,7 +43,7 @@ public class FindTwoArray {
      * @param target
      * @return
      */
-    public boolean findNumberIn2DArray(int[][] matrix, int target) {
+    public boolean searchMatrix(int[][] matrix, int target) {
         // 判断空
         if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
             return false;
@@ -72,7 +72,7 @@ public class FindTwoArray {
      * @param target
      * @return
      */
-    public boolean findNumberIn2DArray2(int[][] matrix, int target) {
+    public boolean searchMatrix2(int[][] matrix, int target) {
         // 判断空
         if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
             return false;
@@ -84,7 +84,7 @@ public class FindTwoArray {
         // 临时记录列的变量
         int c = matrix[0].length - 1;
         // 循环
-        while (r <= row && c >= 0) {
+        while (r < row && c >= 0) {
             // 临时记录当前num
             int num = matrix[r][c];
             /**
